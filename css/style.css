@@ -6,6 +6,16 @@ p {
   margin: 0;
 }
 
+body {
+  background-color: #ede0cd;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 45px;
+  color: orange;
+}
+
 :root {
   --color1: #caa712;
   --color2: #5b1e5d;
@@ -55,7 +65,7 @@ section {
 }
 
 .intro__title {
-  font-size: 45px;
+  font-size: 100px;
   color: orange;
   margin: 0;
   text-align: center;
@@ -101,22 +111,17 @@ section {
   margin: 0 auto;
 }
 
-.intro__title {
-  font-size: 45px;
-  color: orange;
-  margin: 0;
-  text-align: center;
-}
-
 .prod__img {
   width: 17%;
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 220px;
+  left: 220px;
 }
+
 .about__prod {
-  margin-top: 100px;
-  margin-right: auto;
+  margin-top: 220px;
+  margin-right: 220px;
+
   align-items: center;
 }
 
@@ -144,97 +149,144 @@ section {
 
 /* section composition */
 
-.composition__prod {
+.composition__container {
+  padding: 30px;
   background: var(--color1);
   background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
   background: -webkit-linear-gradient(
-    left,
-    var(--color1) 0%,
-    var(--color2) 100%
+  left,
+  var(--color1) 0%,
+  var(--color2) 100%
   );
   background: linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .composition__img_right, .composition__img_left {
-    width: 40%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
+  width: 40%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
+
 .composition__img_right {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .composition__img_left {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .composition__container {
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+
 }
 
 .composition__img {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .composition__prod_left {
-    display: flex;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .composition__prod_right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /* carousel */
 
+.carousel-caption p {
+  font-size: 25px;
+}
 
+.carousel {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 
 /* promo */
 
-.promo {
-    background: var(--color1);
-    background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
-    background: -webkit-linear-gradient(
-      left,
-      var(--color1) 0%,
-      var(--color2) 100%
-    );
-    background: linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
-  }
+.promo__container {
+  padding: 30px;
+  background: var(--color1);
+  background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: -webkit-linear-gradient(
+  left,
+  var(--color1) 0%,
+  var(--color2) 100%
+  );
+  background: linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.promo__container p {
+  color: #fff;
+}
+
+.promo__benefits li {
+  color: #fff;
+  font-size: 25px;
+}
 
 
 /* price__block */
 
-.price__block {
-    background: var(--color1);
-    background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
-    background: -webkit-linear-gradient(
-      left,
-      var(--color1) 0%,
-      var(--color2) 100%
-    );
-    background: linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
-  }
+.price__block_container {
+  padding: 30px;
+  background: var(--color1);
+  background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: -webkit-linear-gradient(
+  left,
+  var(--color1) 0%,
+  var(--color2) 100%
+  );
+  background: linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 
-  #timer {
-    color: #fff;
-    font-size: 65px;
-  }
+#timer {
+  color: #fff;
+  font-size: 65px;
+}
 
 .price__list {
   margin-left: 50px;
   color: #fff;
-  font-size: 55px;
+  font-size: 85px;
+  line-height: 1;
+}
+
+.new__price div {
+  font-size: 120px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .2);
+  background: url("../img/flame.jpg");
+  repeat-x;
+  -webkit-background-clip: text;
+  background-size: contain;
+  animation: fire 15s linear infinite;
+}
+
+@keyframes fire {
+  0% {
+    background-position: left 0 top 0;
+  }
+  50% {
+    background-position: left 150px top -25px;
+  }
+  100% {
+    background-position: left 300px top 0;
+  }
 }
 
 .price__list span {
@@ -271,4 +323,46 @@ section {
   .intro__title {
     font-size: 30px;
   }
+}
+
+
+/* form */
+
+input::placeholder {
+  transition: 0.5s;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+form {
+  background: #aaabb0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.row input {
+  padding: 0.4rem 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+}
+
+.row input:focus {
+  outline: none;
+  border-color: #1976D2;
+}
+
+.row label {
+  display: none;
+  color: red;
+}
+
+.row input:focus + label,
+.row input:valid + label {
+  display: block;
+  font-size: 10px;
+  transform: translateY(-2.5rem);
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
