@@ -550,7 +550,7 @@ input:focus::placeholder {
     font-size: 10px;
   }
   .btn-prod {
-    margin: 2px auto;
+    margin: 12px auto;
   }
   .price__img {
     margin-left: 10%;
@@ -570,5 +570,10 @@ input:focus::placeholder {
   }
   .btn-composition {
     margin-top: 20px;
+  }
+  .btn-price {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 20px;
   }
 }
