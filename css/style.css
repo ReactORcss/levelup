@@ -543,6 +543,9 @@ input:focus::placeholder {
 }
 
 @media (max-width: 320px) {
+  .about__prod{
+    margin-top: 25px;
+  }
   .price__list {
     margin-left: 40px;
   }
